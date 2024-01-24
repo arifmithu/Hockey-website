@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Hockey Team</title>
+    <!-- tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+    <!-- font awesome icon kit -->
+    <script
+      src="https://kit.fontawesome.com/20c7659e38.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- manrope google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        *{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <header class="items-center ">
+      <nav class=" flex justify-between mx-5 lg:flex lg:mx-32 mt-14">
+        <!-- logo -->
+        <div class="flex items-center justify-center gap-4">
+          <i class="fa-solid fa-bars lg:hidden"></i>
+          <h1 class="text-[#13131] text-2xl lg:text-4xl	font-extrabold">Hockey<span class="text-[#FF4240;]">&rsquo;</span>s</h1>
+        </div>
+        <!-- menu -->
+        <div class="hidden lg:flex gap-x-11 items-center text-[#424247] font-normal">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Pages</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+        </div>
+        <!-- button -->
+        <div class="flex gap-6 justify-center items-center">
+          <i class="fa-solid fa-magnifying-glass hidden h-6 w-6 lg:inline text-[#89898B;]"></i>
+          <div>
+            <button class="btn btn-secondary text-xl bg-[#FF4240] text-[#FFFFFF]">Get Ticket</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
